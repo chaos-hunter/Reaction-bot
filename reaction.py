@@ -35,7 +35,7 @@ async def on_message(message):
         joke = pyjokes.get_joke()
         await message.channel.send(joke)
 
-    if message.content.startswith('fuck'):
+    if message.content.startswith('"Insert bad word here"'):
         await message.channel.send('Thats not allowed')
         with open(r'C:\Users\David.Entonu\Downloads\captain.jpg', 'rb') as f:
             picture = discord.File(f)
